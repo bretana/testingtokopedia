@@ -1,3 +1,8 @@
-git remote add origin https://github.com/bretana/testingtokopedia.git
-git branch -M main
-git push -u origin main
+from django.http import HttpResponse
+ 
+api_key = “tokopediakey”
+api_secret = “tokopediasecret”
+api_url = “api.tokopedia.com”
+ 
+def home(request):
+ return HttpResponse(“Hello World”)
